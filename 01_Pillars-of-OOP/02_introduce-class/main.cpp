@@ -2,19 +2,28 @@
 #include <string>
 using namespace std;
 
-// Tedious to do this
+class Employee {
+    public:
+        string name;
+        int age;
+
+        void print_emply_dtls(void) {
+            cout << "Name: " << name << endl;
+            cout << "Age: " << age << endl;
+        }
+};
+
 int main()
 {
-    // Employee
-    string emp1_name = "Ronald";
-    int emp1_age = 26;
-    cout << "Name: " << emp1_name << endl;
-    cout << "Age: " << emp1_age << endl;
+    Employee Employee_1;
+    Employee_1.name = "Ronald";
+    Employee_1.age = 26;
+    Employee_1.print_emply_dtls();
 
-    string emp2_name = "Rosete";
-    int emp2_age = 27;
-    cout << "Name: " << emp2_name << endl;
-    cout << "Age: " << emp2_age << endl;
+    Employee Employee_2;
+    Employee_2.name = "Rosete";
+    Employee_2.age = 27;
+    Employee_2.print_emply_dtls();
 
     return 0;
 }
