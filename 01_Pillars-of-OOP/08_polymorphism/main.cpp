@@ -55,8 +55,8 @@ class Cognizant : public Employee {
 
         // To access name and age, use the accessor from Employee class
         /*void get_name_and_age() {
-            cout << get_emply_name() << endl;
-            cout << get_emply_age() << endl;
+            cout << this->name << endl;
+            cout << this->age << endl;
         }*/
 
         // But if attributes are in protected, derived class can access it
